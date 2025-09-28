@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D image segmentation with Fourier neural operator</title>
+        <meta charset="utf-8" />
+      
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+  <!-- <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'> -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+    </head>
+    <body>
+       
+      <h1>3D image segmentation with Fourier neural operator</h1>
+ <ul>
+    <h4>
+        <p>
+            Supervisor: Vannary Meas-Yedid
+            <br> Contact: <a href="mailto:vmeasyed@pasteur.fr">vmeasyed@pasteur.fr</a>
+        </p>
+        
+    </h4>
+     <h3>
+    <p>
+            Description: </p></h3>
+         <p>  
+          The high computational demands of 3D biomedical image segmentation frequently cause out-of-memory errors in deep learning framework. To mitigate this, training with downsampled images is a common practice. However, this can lead to reduced accuracy when applying the model on original resolution images due to sensitivity to variations in image resolution. FNOSeg3D is introduced as a 3D segmentation model designed to be robust to variations in training image resolution. It leverages the Fourier neural operator (FNO) [1], a deep learning framework for learning mappings between functions in partial differential equations. FNO has the ability to enhance image resolution without explicit training on high-resolution data. This approach appears to be a promising advancement in the field of 3D biomedical image segmentation, particularly in terms of addressing the challenges related to image resolution variations during training.
+        
+<br>This project focuses on efficient 3D image segmentation in order to segment volumetric electron microscope images. After a review of the existing models in 3D segmentation, the student will implement the FNOSeg3D and make a comparison with existing methods.</p>
+The public datasets are available for download:
+<ul> <li> https://cremi.org/data/  </li>
+     <li>https://openorganelle.janelia.org/</li>
+</ul>
+    <p>
+     References:
+    <br> [1] Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar, “Fourier neural operator for parametric partial differential equations,” in International Conference on Learning Representations, 2021.</p>
+ </p>
+
+    <h4> <a href="index.html">Back to the list</a> </h4>
+    </body>
+    
+</html>
+
