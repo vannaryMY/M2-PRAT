@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vascular network extraction with structural priors
+</title>
+        <meta charset="utf-8" />
+      
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+  <!-- <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'> -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+    </head>
+    <body>
+       
+      <h1>Vascular network extraction with structural priors</h1>
+       <ul>
+    <h4>
+        <p>
+            Supervisor: Julie Mabon
+            <br> Contact: <a href="mailto:julie.mabon@pasteur.fr">julie.mabon@pasteur.fr</a>
+        </p>
+        
+    </h4>
+     <h3>
+            Description: </h3>
+          
+        Biologists need to study how different conditions or treatments modify the vasculature of specific organs. Modern 3D imaging methods such as lightsheet or confocal microscopy now provide highly detailed images of whole tissues, but the size of the datasets makes manual analysis impossible. To obtain quantitative information one needs to extract the morphological skeleton (which gives the network topology) and the thickness of each vessel (required for diameter statistics).
+
+While classical image-analysis methods (filtering, thresholding, morphological operations) can produce a decent vascular graph, the resulting networks often contain broken or isolated segments and inaccurate thickness estimates. These hinder the downstream statistical analysis, especially when the image is noisy or the quality varies across different modalities. Moreover, fixing these issues with ad-hoc post-processing requires extensive manual parameter tweaking.
+
+For this project we propose to explore a hybrid approach, combining classical extraction methods with convolutional neural network (CNN) for network completion and correction:
+
+<ul> <li>1. The first step is to implement a vessel network extraction method using classical image processing methods and morphological tools such as in [1].More specifically we need to extract a graph/skeleton with the width data corresponding to this skeleton. This will serve as a baseline for the next step. 
+</li> <li>2. The second step consists in improving the the initial segmentation/extraction with CNN based methods such as [2,3] that are trained to maintain a structural coherence in a 3d curvilinear network. In addition we would like to maintain the width information to allow for the statistical study of the vascular network. This step also consists in a qualitative and quantitative evaluation of the results against the baseline and/or ground truth.
+</li>
+</ul>
+
+[1] Spangenberg, Philippa, Nina Hagemann, Anthony Squire, et al. “Rapid and Fully Automated Blood Vasculature Analysis in 3D Light-Sheet Image Volumes of Different Organs.” Cell Reports Methods 3, no. 3 (2023). https://doi.org/10.1016/j.crmeth.2023.100436.
+
+[2] Ren, Jiaxiang, Zhenghong Li, Wensheng Cheng, et al. “Self-Supervised 3D Skeleton Completion for Vascular Structures.” In Medical Image Computing and Computer Assisted Intervention – MICCAI 2024, edited by Marius George Linguraru, Qi Dou, Aasa Feragen, et al., vol. 15011. Lecture Notes in Computer Science. Springer Nature Switzerland, 2024. https://doi.org/10.1007/978-3-031-72120-5_54.
+
+[3] Carneiro-Esteves, Sophie, Antoine Vacavant, and Odyssée Merveille. “A Plug-and-Play Framework for Curvilinear Structure Segmentation Based on a Learned Reconnecting Regularization.” _Neurocomputing_ 599 (September 2024): 128055. https://doi.org/10.1016/j.neucom.2024.128055.
+
+
+</ul>
+ <h4> <a href="index.html">Back to the list</a> </h4>
+    </body>
+    
+</html>
