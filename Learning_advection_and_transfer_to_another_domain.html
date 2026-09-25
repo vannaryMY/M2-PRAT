@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning advection and transfer to another domain</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+    <body>
+        <h1>Learning advection and transfer to another domain</h1>
+        <ul>
+            <h4>
+                <p>
+                    Supervisor: Dominique Béréziat
+                    <br> Contact: <a href="mailto:dominique.bereziat@lip6.fr">dominique.bereziat@lip6.fr</a>
+                </p>
+            </h4>
+            <h3>
+                <p>Description:</p>
+            </h3>
+            <p>Estimating apparent motion (also named optical flow) from 2 or more images is one of the standard computer field problems.<br><br>Nowadays, the best methods are based on DL models but need ground truth to be trained. Learning optical flow in an unsupervised remains possible but with weak performance. <br><br>In this project, we propose to learn the advection (the process formalizing optical flow) in a supervised framework. To this ens, we'll make use of the large datasets available in the literature. Having learned advection, we propose in a second step to train an optical flow estimator in an unsupervised framework. In a final step, we aimed to transfer to an another domain, such as ocean surface circulation<br><br>Tasks to achieve:<br>- review of the literature: old-school optical flow estimation, deep learning optical flow estimation,  <br>- learning advection: implementation, training, and testing with a basic model (Unet, ResNet, ...),<br>- transfer: use of FlowNet (or alternative) combined with the learned advection, train, test and generalization.</p>
+            
+            <p><strong>Topic split:</strong> No</p>
+            
+        </ul>
+        <h4><a href="index.html">Back to the list</a></h4>
+    </body>
+</html>
