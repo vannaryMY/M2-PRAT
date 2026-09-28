@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning cell representations from multiplexed tissue images in breast cancer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+    <body>
+        <h1>Learning cell representations from multiplexed tissue images in breast cancer</h1>
+        <ul>
+            <h4>
+                <p>
+                    Supervisor: Vadori Valentina
+                    <br> Contact: <a href="mailto:valentina.vadori@pasteur.fr">valentina.vadori@pasteur.fr</a>
+                </p>
+            </h4>
+            <h3>
+                <p>Description:</p>
+            </h3>
+            <p>Highly multiplexed imaging measures dozens of proteins at subcellular resolution, providing detailed information on cell identity, morphology and protein organisation within tissue. Most computational analyses, however, reduce each segmented cell to a vector of mean marker intensities, preserving overall protein abundance while discarding cell morphology and the intracellular distribution of proteins. Graph-based models built on these conventional representations can capture biologically meaningful tissue organisation, while recent multi-view approaches suggest that richer descriptions of individual cells may improve associations with clinical variables. This project will investigate whether cell representations derived directly from multiplexed tissue images contain predictive information beyond conventional mean marker intensities. The study will compare progressively richer descriptions of the same segmented cells, including standard marker summaries, features describing cell morphology and intracellular protein organisation, and learned image-based representations extracted from multichannel regions centred on individual cells. The exact feature sets and representation-learning strategy will be selected following a review of current approaches. To enable a controlled comparison, the different cell representations will be evaluated within the same spatial modelling framework. Cells will be represented as nodes in a graph constructed from their positions in the original tissue images, while the corresponding cell representations will define the node features. The graph construction strategy and downstream graph neural network will be chosen according to established approaches for multiplexed tissue analysis and kept consistent across the representation comparison. Where image-based representations are learned, neighbouring-cell signal can be excluded using the available segmentation masks so that intracellular information can be studied separately from local tissue context. The project will use publicly available imaging mass cytometry data from the METABRIC breast cancer cohort, comprising multiplexed tissue images, single-cell segmentation masks and clinical annotations. Tumour grade will be used as the primary prediction task because it reflects a tissue-level phenotype not directly encoded by any individual marker and provides a published reference point for graph-based analysis on this cohort. Following a bibliographic study of multiplexed image analysis, representation learning and graph neural networks, the student will define suitable cell representations, construct the corresponding spatial graphs and evaluate how the choice of cell representation affects tissue-level prediction. Particular attention will be given to separating improvements due to richer cell-level information from those due to changes in the downstream model. Possible extensions include evaluating the same strategy on an independent multiplexed imaging cohort.<br><br>Main activities<br>- Conduct a targeted literature review of multiplexed image analysis, representation learning and graph-based modelling.<br>- Define and extract a small set of complementary cell representations.<br>- Construct spatial cell graphs from the multiplexed tissue images.<br>- Compare, within the same graph model, how different cell representations influence tissue-level prediction.<br><br>References<br>- Ali H.R., Jackson H.W., Zanotelli V.R.T., et al. Imaging mass cytometry and multiplatform genomics define the phenogenomic landscape of breast cancer. Nature Cancer, 2020;1(2):163–175.<br>- Ali M., Richter S., Ertürk A., Fischer D.S., Theis F.J. Graph neural networks learn emergent tissue properties from spatial molecular profiles. Nature Communications, 2025;16:8419.<br>- Ayub S., Gorman J.L., Chen E.L.Y., Jackson H.W., Selega A., Campbell K.R. Multi-view deep learning of highly multiplexed imaging data improves association of cell states with clinical outcomes. Bioinformatics Advances, 2026;6(1):vbag010.<br>- Amitay Y., Bussi Y., Feinstein B., Bagon S., Milo I., Keren L. CellSighter: a neural network to classify cells in highly multiplexed images. Nature Communications, 2023;14. doi:10.1038/s41467-023-40066-7.</p>
+            
+            <p><strong>Topic split:</strong> Yes</p>
+            <p><strong>Target students:</strong> 2</p>
+        </ul>
+        <h4><a href="index.html">Back to the list</a></h4>
+    </body>
+</html>
