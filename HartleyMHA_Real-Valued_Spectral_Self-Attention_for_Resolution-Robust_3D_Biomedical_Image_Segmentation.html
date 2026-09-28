@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HartleyMHA: Real-Valued Spectral Self-Attention for Resolution-Robust 3D Biomedical Image Segmentation</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+    <body>
+        <h1>HartleyMHA: Real-Valued Spectral Self-Attention for Resolution-Robust 3D Biomedical Image Segmentation</h1>
+        <ul>
+            <h4>
+                <p>
+                    Supervisor: Vannary Meas-Yedid
+                    <br> Contact: <a href="mailto:vmeasyed@pasteur.fr">vmeasyed@pasteur.fr</a>
+                </p>
+            </h4>
+            <h3>
+                <p>Description:</p>
+            </h3>
+            <p>The high computational demands of 3D biomedical image segmentation frequently cause out-of-memory errors in deep learning framework. To mitigate this, training with downsampled images is a common practice. However, this can lead to reduced accuracy when applying the model on original resolution images due to sensitivity to variations in image resolution.<br>Since the introduction of Transformers, attention-based models have achieved promising results in image segmentation. However, the quadratic complexity of self-attention in image size becomes prohibitive in 3D: to avoid out-of-memory errors, models are typically trained on reduced input sizes, yielding suboptimal accuracy when applied at the original resolution. Inspired by the Fourier neural operator [1] (FNO); a framework for learning mappings between functions that offers a global receptive field and zero-shot super-resolution, the article [2] proposes HartleyMHA, a frequency-domain self-attention model robust to training resolution. By replacing the Fourier transform with a parameter-shared Hartley transform, the authors reduce the model size by orders of magnitude, enabling efficient self-attention for expressive high-order feature combination.<br><br>This project focuses on efficient 3D image segmentation in order to segment volumetric electron microscope images. After a review of the existing models in 3D segmentation, the student will implement the HartleyMHA and make a comparison with existing methods, including the FNOSeg3D.<br><br>The public Lucchi datasets (EPFL Hippocampus mitochondria segmentation) can be downloaded: https://www.epfl.ch/labs/cvlab/data/data-em/</p>
+            <p><strong>More information / References:</strong><br>https://drive.google.com/open?id=1z-IjFG4qAZ7rVIRjdhbPLKGecsrEIAze</p>
+            <p><strong>Topic split:</strong> No</p>
+            
+        </ul>
+        <h4><a href="index.html">Back to the list</a></h4>
+    </body>
+</html>
