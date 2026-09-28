@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identifying extreme protein biomarker levels from histology with multiple instance learning</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+    <body>
+        <h1>Identifying extreme protein biomarker levels from histology with multiple instance learning</h1>
+        <ul>
+            <h4>
+                <p>
+                    Supervisor: Vadori Valentina
+                    <br> Contact: <a href="mailto:valentina.vadori@pasteur.fr">valentina.vadori@pasteur.fr</a>
+                </p>
+            </h4>
+            <h3>
+                <p>Description:</p>
+            </h3>
+            <p>Protein biomarkers such as hormone receptors, HER2 and proliferation-associated proteins provide essential information for breast cancer classification and treatment decisions. Their assessment generally requires dedicated immunohistochemical or molecular assays, whereas H&E slides are routinely acquired as part of standard histopathological evaluation, and deep learning has shown that part of this molecular information can be inferred directly from tissue morphology. Predictive performance is, however, usually assessed through cohort-level correlation or average regression error: a model may perform well overall while failing to identify patients at the extremes of the biomarker distribution. This project will investigate whether histological morphology is sufficiently informative to identify tumours with particularly high or low protein biomarker levels. The study will focus on a selected set of proteins with established relevance in breast cancer and for which previous work has demonstrated a measurable histological signal. An attention-based multiple instance learning (MIL) model will aggregate patch-level representations into slide-level predictions of continuous protein abundance. Performance will be assessed using conventional regression metrics together with ranking-based analyses designed to determine how reliably the model identifies cases at the upper and lower ends of the measured protein distributions. A second objective will be to characterise cases for which measured and predicted protein levels strongly disagree. Prediction errors will be analysed in relation to available clinical and molecular annotations, such as receptor status and published estimates of tumour purity. For selected discordant cases, the spatial distribution of MIL attention scores may also be visualised at whole-slide level as an exploratory analysis. These analyses will test whether systematic prediction errors are associated with measurable properties of the samples, without assuming that their biological or pathological cause can be identified. The project will use the TCGA breast cancer cohort, which provides matched H&E whole-slide images and reverse-phase protein array measurements for more than 200 proteins in approximately 860 patients, together with precomputed patch-level representations from the UNI2-h pathology foundation model. Following a bibliographic study of multiple instance learning and molecular biomarker prediction from histology, the student will implement and evaluate the MIL model, perform the ranking-based analysis of extreme biomarker levels and analyse selected discordant cases using the available annotations and model outputs. Possible extensions include estimating predictive uncertainty to determine whether unreliable predictions can be identified automatically, or reproducing the whole-slide processing pipeline on a subset of the cohort.<br><br>Main activities<br>- Conduct a targeted literature review of multiple instance learning and histology-based biomarker prediction.<br>- Implement and evaluate an attention-based MIL approach using precomputed image features.<br>- Assess both overall protein prediction and the recovery of cases with extreme protein levels.<br>- Analyse selected discordant cases using available annotations and model outputs.<br><br>References<br>- Liu H., Xie X., Wang B. Deep learning infers clinically relevant protein levels and drug response in breast cancer from unannotated pathology images. npj Breast Cancer, 2024;10:18.<br>- El Nahhas O.S.M., Loeffler C.M.L., Carrero Z.I., et al. Regression-based deep-learning predicts molecular biomarkers from pathology slides. Nature Communications, 2024;15:1253.<br>- Arslan S., Schmidt J., Bass C., et al. A systematic pan-cancer study on deep learning-based prediction of multi-omic biomarkers from routine pathology images. Communications Medicine, 2024;4:48.<br>- Akbani R., Ng P.K.S., Werner H.M.J., et al. A pan-cancer proteomic perspective on The Cancer Genome Atlas. Nature Communications, 2014;5:3887.</p>
+            
+            <p><strong>Topic split:</strong> Yes</p>
+            <p><strong>Target students:</strong> 2</p>
+        </ul>
+        <h4><a href="index.html">Back to the list</a></h4>
+    </body>
+</html>
