@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Context-aware segmentation of cerebellar layers in neurodegenerative disease</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </head>
+    <body>
+        <h1>Context-aware segmentation of cerebellar layers in neurodegenerative disease</h1>
+        <ul>
+            <h4>
+                <p>
+                    Supervisor: Vadori Valentina
+                    <br> Contact: <a href="mailto:valentina.vadori@pasteur.fr">valentina.vadori@pasteur.fr</a>
+                </p>
+            </h4>
+            <h3>
+                <p>Description:</p>
+            </h3>
+            <p>Neurodegenerative disorders, such as lysosomal storage diseases (LSDs) and Alzheimer's disease, are a group of severe diseases affecting humans and animals and characterised by neuronal loss and histological architecture changes in several areas of the central nervous system, including the cerebellar cortex. Although objective measurements of layer thickness and area could help characterise disease severity, these alterations are still commonly assessed qualitatively or semi-quantitatively by pathologists. Automatic layer segmentation is challenging because a layer often cannot be identified from local texture alone: the model requires anatomical context, and how much context is necessary remains an open question. The objective of this project is to segment the principal layers of the cat cerebellum (the molecular, Purkinje cell and granular layers, together with white matter) in histological whole-slide images and to determine how the amount of anatomical context available to a model affects segmentation accuracy. A supervised semantic segmentation network will be trained using inputs with different physical fields of view to determine how the amount of anatomical context affects segmentation performance. A complementary unsupervised image-based approach will be used to investigate whether cerebellar tissue layers can be recovered without explicit annotations, for example by learning latent representations of histological patches with an autoencoder and subsequently clustering them. As an extension, a multi-resolution strategy combining high-resolution local information with a larger anatomical field of view could be explored. The student will work on annotated histological sections from control cats and cats affected by neuronal ceroid lipofuscinoses (NCL), provided by the University of Padova. Performance will be evaluated using semantic segmentation and boundary metrics together with biologically relevant measurements of cerebellar morphology, including agreement between automatically and manually derived layer thicknesses. Because neuronal loss and layer thinning alter the local appearance of the tissue, the analysis will also examine whether the amount of context required for accurate segmentation differs between control and diseased tissue, and whether segmentation errors bias the resulting thickness measurements. Following a bibliographic study of semantic segmentation, multi-resolution histopathology analysis and unsupervised representation learning, the student will implement the segmentation models, design the controlled context experiments and evaluate their effect on both segmentation accuracy and quantitative measurements of cerebellar structure.<br><br>Main activities<br>- Conduct a targeted literature review of semantic, unsupervised and multi-resolution segmentation.<br>- Establish a supervised segmentation baseline and investigate different fields of view.<br>- Implement an unsupervised approach (e.g. autoencoder and clustering) for comparison.<br>- Evaluate segmentation performance and the accuracy of derived layer measurements in control and NCL tissue.<br><br>References<br>- Vadori V., Peruffo A., Graïc J.-M., Vadori G., Finos L., Grisan E. Revealing cortical layers in histological brain images with self-supervised graph convolutional networks applied to cell-graphs. IEEE International Symposium on Biomedical Imaging (ISBI), 2024.<br>- van Rijthoven M., Balkenhol M., Siliņa K., van der Laak J., Ciompi F. HookNet: multi-resolution convolutional neural networks for semantic segmentation in histopathology whole-slide images. Medical Image Analysis, 2021;68:101890.<br>- Estela M., Salo R.A., San Martín Molina I., et al. Autoencoders for unsupervised analysis of rat myeloarchitecture. bioRxiv, 2026. doi:10.64898/2026.03.02.708929.<br>- Katz M.L., Buckley R.M., Biegen V., et al. Neuronal ceroid lipofuscinosis in a domestic cat associated with a DNA sequence variant that creates a premature stop codon in CLN6. G3 (Bethesda), 2020;10(8):2741–2751.</p>
+            
+            <p><strong>Topic split:</strong> Yes</p>
+            <p><strong>Target students:</strong> 2</p>
+        </ul>
+        <h4><a href="index.html">Back to the list</a></h4>
+    </body>
+</html>
